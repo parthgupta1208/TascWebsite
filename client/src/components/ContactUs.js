@@ -27,7 +27,7 @@ const ContactUs = () => {
         });
 
         let reqOptions = {
-            url: "https://tasc-nmamit.onrender.com/verify/sendotp",
+            url: "https://tasc-nmamit.onrender.com/post/sendmail",
             method: "POST",
             headers: headersList,
             data: bodyContent,

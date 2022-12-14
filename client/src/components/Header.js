@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="navbar bg-none 20 w-full md:w-8/12 mx-auto sticky top-0 rounded-3xl z-40 backdrop-blur-lg ">
+      <div className="navbar bg-none 20 w-full md:w-8/12 mx-auto sticky top-0 rounded-3xl z-30 backdrop-blur-lg ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

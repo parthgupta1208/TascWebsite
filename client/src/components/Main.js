@@ -25,7 +25,7 @@ export default function Main() {
       "Content-Type": "application/json"
     }
     let reqOptions = {
-      url: "http://localhost:8080/CoreMembers//all",
+      url: "https://tasc-nmamit.onrender.com/CoreMembers/all",
       method: "GET",
       headers: headersList,
     }
@@ -42,7 +42,7 @@ export default function Main() {
       "Content-Type": "application/json"
     }
     let reqOptions = {
-      url: "http://localhost:8080/post/all",
+      url: "https://tasc-nmamit.onrender.com/post/all",
       method: "GET",
       headers: headersList,
     }
@@ -55,8 +55,8 @@ export default function Main() {
 
 
   useEffect(() => {
-    // getMembers();
-    // getPost();
+    getMembers();
+    getPost();
   }, []);
 
 
@@ -225,7 +225,7 @@ export default function Main() {
       </div>
 
       {/* Team Section */}
-      <div className=' bg-team ' >
+      <div className=' bg-team ' id='team' >
         <section className="text-gray-200 body-font pt-10 min-h-[80vh]">
           <div className="container px-5 mx-auto">
             <div className="text-center">
@@ -250,7 +250,7 @@ export default function Main() {
               </Slide>
               <div className="container px-5 py-16 mx-auto">
                 <div className="flex flex-wrap -m-4 gap-4 ">
-                  {TeamData.map((member, key) => {
+                  {members.map((member, key) => {
                     return (
                       <Team key={key} member={member} />
                     )
@@ -290,7 +290,7 @@ export default function Main() {
               <div className="container px-5 pt-16 mx-auto">
                 <div className="flex flex-wrap justify-center -m-4 gap-6">
 
-                  {EventData.map((post, key) => {
+                  {posts.map((post, key) => {
                     return (
                       <Post key={key} post={post} />
                     )
