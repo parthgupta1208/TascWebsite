@@ -47,14 +47,13 @@ const ContactUs = () => {
                 </div> */}
 
                 <div className="w-full px-6 py-8 md:px-8 ">
-                    <h2 className="text-2xl font-semibold text-center text-gray-700 dark:text-white">
-                        Brand
+                <h2 className="text-2xl font-semibold text-center text-gray-700 dark:text-white">
+                        Contact Us
                     </h2>
 
                     <p className="text-xl text-center text-gray-200 dark:text-gray-200">
-                        Welcome back!
+                        We are here to help you !!!
                     </p>
-
                     <div className="mt-4">
                         <div className="flex justify-between">
                             <label className="block mb-2 text-sm font-medium text-gray-200 dark:text-gray-200" htmlFor="LoggingEmailAddress">
