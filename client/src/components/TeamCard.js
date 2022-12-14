@@ -7,7 +7,7 @@ const Team = ({member}) => {
             <Flip top >
                 <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
                     <div className="w-full h-96 bg-gray-300 bg-center bg-cover rounded-lg shadow-md" style={{
-                        backgroundImage: `url(https://drive.google.com/uc?id=${member.image})`
+                        backgroundImage: `url(${member.image})`
                     }} ></div>
 
                     <div className="w-56 -mt-10 overflow-hidden  border-b-2 border-t-2  rounded-lg shadow-lg md:w-64 backdrop-blur-md ">

@@ -23,7 +23,7 @@ const Post = ({ post }) => {
             <Flip top >
                 <div onClick={(e)=>{setShowModal(true)}} className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
                     <div className="w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md cursor-pointer" style={{
-                        backgroundImage: `url(https://drive.google.com/uc?id=${post.image})`
+                        backgroundImage: `url(${post.image})`
                     }} ></div>
 
                     <div className="w-56 -mt-10 overflow-hidden  border-b-2 border-t-2  rounded-lg shadow-lg md:w-64 backdrop-blur-md ">
