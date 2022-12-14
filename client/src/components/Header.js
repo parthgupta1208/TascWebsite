@@ -14,22 +14,46 @@ export default function Header() {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li>
-                <Link to='' className="mr-6 hover:text-white" >Home</Link>
+                <a href='/' onClick={e => {
+                  let hero = document.getElementById("home");
+                  e.preventDefault();  // Stop Page Reloading
+                  hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }} className="mr-6 hover:text-white" >Home</a>
               </li>
               <li>
-                <Link to='' className="mr-6 hover:text-white" >About Us</Link>
+                <a href='/' onClick={e => {
+                  let hero = document.getElementById("aboutus");
+                  e.preventDefault();  // Stop Page Reloading
+                  hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }} className="mr-6 hover:text-white" >About Us</a>
               </li>
               <li>
-                <Link to='' className="mr-6 hover:text-white" >Our Faculty</Link>
+                <a href='/' onClick={e => {
+                  let hero = document.getElementById("faculty");
+                  e.preventDefault();  // Stop Page Reloading
+                  hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }} className="mr-6 hover:text-white" >Our Faculty</a>
               </li>
               <li>
-                <Link to='' className="mr-6 hover:text-white" >Our Team</Link>
+                <a href='/' onClick={e => {
+                  let hero = document.getElementById("team");
+                  e.preventDefault();  // Stop Page Reloading
+                  hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }} className="mr-6 hover:text-white" >Our Team</a>
               </li>
               <li>
-                <Link to='' className="mr-6 hover:text-white" >Events</Link>
+                <a href='/' onClick={e => {
+                  let hero = document.getElementById("event");
+                  e.preventDefault();  // Stop Page Reloading
+                  hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }} className="mr-6 hover:text-white" >Events</a>
               </li>
               <li>
-                <Link to='' className="mr-6 hover:text-white" >Contact Us</Link>
+                <a href='/' onClick={e => {
+                  let hero = document.getElementById("contactus");
+                  e.preventDefault();  // Stop Page Reloading
+                  hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }} className="mr-6 hover:text-white" >Contact Us</a>
               </li>
             </ul>
           </div>
@@ -40,22 +64,46 @@ export default function Header() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to='' className="mr-6 hover:text-white" >Home</Link>
+              <a href='/' onClick={e => {
+                let hero = document.getElementById("home");
+                e.preventDefault();  // Stop Page Reloading
+                hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }} className="mr-6 hover:text-white" >Home</a>
             </li>
             <li>
-              <Link to='' className="mr-6 hover:text-white" >About Us</Link>
+              <a href='/' onClick={e => {
+                let hero = document.getElementById("aboutus");
+                e.preventDefault();  // Stop Page Reloading
+                hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }} className="mr-6 hover:text-white" >About Us</a>
             </li>
             <li>
-              <Link to='' className="mr-6 hover:text-white" >Our Faculty</Link>
+              <a href='/' onClick={e => {
+                let hero = document.getElementById("faculty");
+                e.preventDefault();  // Stop Page Reloading
+                hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }} className="mr-6 hover:text-white" >Our Faculty</a>
             </li>
             <li>
-              <Link to='' className="mr-6 hover:text-white" >Our Team</Link>
+              <a href='/' onClick={e => {
+                let hero = document.getElementById("team");
+                e.preventDefault();  // Stop Page Reloading
+                hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }} className="mr-6 hover:text-white" >Our Team</a>
             </li>
             <li>
-              <Link to='' className="mr-6 hover:text-white" >Events</Link>
+              <a href='/' onClick={e => {
+                let hero = document.getElementById("event");
+                e.preventDefault();  // Stop Page Reloading
+                hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }} className="mr-6 hover:text-white" >Events</a>
             </li>
             <li>
-              <Link to='' className="mr-6 hover:text-white" >Contact Us</Link>
+              <a href='/' onClick={e => {
+                let hero = document.getElementById("contactus");
+                e.preventDefault();  // Stop Page Reloading
+                hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }} className="mr-6 hover:text-white" >Contact Us</a>
             </li>
           </ul>
         </div>

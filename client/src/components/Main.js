@@ -55,13 +55,13 @@ export default function Main() {
 
 
   useEffect(() => {
-    getMembers();
-    getPost();
+    // getMembers();
+    // getPost();
   }, []);
 
 
   return (
-    <section className="text-black body-font lg:pt-2">
+    <section className="text-black body-font lg:pt-2" id='home'>
       <div className="bg-home ">
         <div className="container  mx-auto min-h-[95vh]  lg:py-4">
           <Flip duration={1300} top cascade >
@@ -99,7 +99,7 @@ export default function Main() {
 
       {/* about us section */}
 
-      <section className="text-gray-200 body-font bg-features" >
+      <section className="text-gray-200 body-font bg-features" id='aboutus' >
         <div className="text-center pt-20 ">
           <Slide top cascade>
             <h2
@@ -264,7 +264,7 @@ export default function Main() {
       </div>
 
       {/* Post Section */}
-      <div className="bg-post">
+      <div className="bg-post" id='event' >
         <section className="text-gray-200 body-font  py-10 min-h-[80vh]">
           <div className="container px-5 mx-auto">
             <div className="text-center ">
@@ -305,7 +305,7 @@ export default function Main() {
       </div>
 
       {/* contact us */}
-      <div className="bg-contactus">
+      <div className="bg-contactus" id='contactus' >
         <section className="text-gray-200 body-font  py-10 min-h-[80vh]">
           <div className="container px-5 mx-auto">
             <div className="text-center mb-20">

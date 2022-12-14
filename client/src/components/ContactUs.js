@@ -22,12 +22,12 @@ const ContactUs = () => {
         let bodyContent = JSON.stringify({
             "email": email,
             "name": name,
-            "otp": message
+            "message": message
 
         });
 
         let reqOptions = {
-            url: "https://student-dbms.onrender.com/verify/sendotp",
+            url: "https://tasc-nmamit.onrender.com/verify/sendotp",
             method: "POST",
             headers: headersList,
             data: bodyContent,
