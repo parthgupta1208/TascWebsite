@@ -19,6 +19,7 @@ const corsOptions = {
     optionSuccessStatus: 200,
 }
 app.use(cors(corsOptions))
+mongoose.set('strictQuery', true);
 
 // Connect to DB
 const dbConnect = async () => {
