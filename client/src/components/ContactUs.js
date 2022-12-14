@@ -27,7 +27,7 @@ const ContactUs = () => {
         });
 
         let reqOptions = {
-            url: "https://student-db.onrender.com/verify/sendotp",
+            url: "https://student-dbms.onrender.com/verify/sendotp",
             method: "POST",
             headers: headersList,
             data: bodyContent,
