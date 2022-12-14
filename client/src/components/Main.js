@@ -10,6 +10,8 @@ import ContactUs from './ContactUs';
 import faculty from '../Constant/Teacher';
 import AutoTyping, { BlinkCursor } from 'react-auto-typing'
 import Faculty from './FacultyCard';
+import TeamData from '../Constant/TeamData';
+import EventData from '../Constant/Event';
 
 
 export default function Main() {
@@ -248,7 +250,7 @@ export default function Main() {
               </Slide>
               <div className="container px-5 py-16 mx-auto">
                 <div className="flex flex-wrap -m-4 gap-4 ">
-                  {members.map((member, key) => {
+                  {TeamData.map((member, key) => {
                     return (
                       <Team key={key} member={member} />
                     )
@@ -288,7 +290,7 @@ export default function Main() {
               <div className="container px-5 pt-16 mx-auto">
                 <div className="flex flex-wrap justify-center -m-4 gap-6">
 
-                  {posts.map((post, key) => {
+                  {EventData.map((post, key) => {
                     return (
                       <Post key={key} post={post} />
                     )
