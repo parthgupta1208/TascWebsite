@@ -1,8 +1,6 @@
 // import CountUp from "react-countup";
 // import VisibilitySensor from "react-visibility-sensor";
-import { Link } from 'react-router-dom';
-import axios from "axios";
-import { useEffect, useState } from "react";
+
 import { Slide, Flip } from "react-reveal";
 import Post from "./PostCard";
 import Team from './TeamCard';
@@ -16,48 +14,7 @@ import EventData from '../Constant/Event';
 
 export default function Main() {
 
-  const [members, setMembers] = useState([]);
-  const [posts, setPosts] = useState([]);
 
-  const getMembers = async () => {
-    let headersList = {
-      "Accept": "*/*",
-      "Content-Type": "application/json"
-    }
-    let reqOptions = {
-      url: "https://tasc-nmamit.onrender.com/CoreMembers/all",
-      method: "GET",
-      headers: headersList,
-    }
-
-    let response = await axios.request(reqOptions);
-    console.log(response.data);
-    setMembers(response.data);
-  }
-
-
-  const getPost = async () => {
-    let headersList = {
-      "Accept": "*/*",
-      "Content-Type": "application/json"
-    }
-    let reqOptions = {
-      url: "https://tasc-nmamit.onrender.com/post/all",
-      method: "GET",
-      headers: headersList,
-    }
-
-    let response = await axios.request(reqOptions);
-    console.log(response.data);
-    setPosts(response.data);
-  }
-
-
-
-  useEffect(() => {
-    getMembers();
-    getPost();
-  }, []);
 
 
   return (
@@ -250,7 +207,7 @@ export default function Main() {
               </Slide>
               <div className="container px-5 py-16 mx-auto">
                 <div className="flex flex-wrap -m-4 gap-4 ">
-                  {members.map((member, key) => {
+                  {TeamData.map((member, key) => {
                     return (
                       <Team key={key} member={member} />
                     )
@@ -290,7 +247,7 @@ export default function Main() {
               <div className="container px-5 pt-16 mx-auto">
                 <div className="flex flex-wrap justify-center -m-4 gap-6">
 
-                  {posts.map((post, key) => {
+                  {EventData.map((post, key) => {
                     return (
                       <Post key={key} post={post} />
                     )

@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Cursor />
-      {isLoading ? <Loader/> : null}
+      {/* {isLoading ? <Loader/> : null} */}
         
       
         <Routes>

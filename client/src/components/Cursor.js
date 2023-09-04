@@ -51,7 +51,7 @@ const Cursor= () => {
   return (
     <div
       ref={cursorRef}
-      className="w-20 h-20 border border-white rounded-full fixed z-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none hidden transition duration-100 bg-blend-soft-light backdrop-invert"
+      className="w-10 h-10   rounded-full fixed z-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none hidden transition duration-100 bg-blend-soft-light backdrop-hue-rotate-90 backdrop-blur-sm "
     ></div>
   );
 };
