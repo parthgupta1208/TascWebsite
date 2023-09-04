@@ -9,7 +9,7 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(e.target);
+    // console.log(e.target);
     setLoading(true);
     try {
       await emailjs.sendForm(
@@ -20,7 +20,7 @@ const ContactUs = () => {
       );
       alert("Sent Successfully 😁😁 !")
     } catch (error) {
-        console.log(error);
+        // console.log(error);
         alert("Failed 🥲")
     }
     //form reset

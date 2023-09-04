@@ -20,8 +20,8 @@ function App() {
       setIsLoading(false);
     }
     setTimeout(() => {setIsLoading(false)}, 5000);
-    console.log('loading -> ',isLoading);
-    console.log(document.readyState);
+    // console.log('loading -> ',isLoading);
+    // console.log(document.readyState);
   },[document.readyState]);
   return (
     <>

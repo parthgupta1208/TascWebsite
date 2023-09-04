@@ -28,7 +28,7 @@ const Script = () => {
                 data: bodyContent,
             }
             let response = await axios.request(reqOptions);
-            console.log(response);
+            // console.log(response);
         })
     }
 
@@ -53,7 +53,7 @@ const Script = () => {
                 data: bodyContent,
             }
             let response = await axios.request(reqOptions);
-            console.log(response);
+            // console.log(response);
         })
     }
 

@@ -31,7 +31,7 @@ export default function Login() {
       data: bodyContent,
     }
     let response = await axios.request(reqOptions);
-    console.log(response);
+    // console.log(response);
   }
 
 

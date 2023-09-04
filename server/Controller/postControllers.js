@@ -65,7 +65,7 @@ const updatePostByPid = async (req, res) => {
             res.status(200).json("Account has been updated")
         }
     } catch (error) {
-        console.log(error)
+        // console.log(error)
         res.status(500).send(error)
     }
 }
